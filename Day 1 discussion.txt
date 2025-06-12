@@ -1,0 +1,153 @@
+Algorithm : 
+
+set of instructions helps us to solve a particular task
+
+problem statement --understand --divide them in to number of steps
+
+steps can be followed in any of the programming languages
+
+c, c++, c#.net, vb.net, java etc 
+stack s1= new stack();
+s1.push(10);
+s1.push(11);
+s3.push(14);
+
+console.writeline(s1.count);  //3
+for i in s1
+   console.writeline(i)
+
+14
+11
+10
+console.writeline(s1.peek()); // 14
+=================================================================
+queue q1= new queue();
+q1.enqueue(10);
+q1.enqueue(11);
+q3.enqueue(14);
+
+console.writeline(q1.count);  //3
+for i in q1
+   console.writeline(i)
+
+10
+11
+14
+console.writeline(q1.peek()); // 10
+Bubble sort : 
+
+    1,7,8,18,5,9,2
+
+1st pass
+
+1,7,8,5,9,2,18
+
+2nd pass
+1 7 5 8 2 9 18
+
+3rd pass 
+1,5,7,2,8,9,18
+
+4th pass
+1,5,2,7,8,9,18
+
+5th pass
+1,2,5,7,8,9,18
+
+===============================================================================
+Insertion sort : 
+1,7,8,18,5,9,2
+
+Initially 
+1,7,8,18,5,9,2
+
+1st pass
+1,7,8,18,5,9,2
+
+2nd pass
+1,7,8,18,5,9,2
+
+3rd pass
+1,7,8,18,5,9,2
+
+4th pass
+1,5,7,8,18,9,2
+
+5th pass
+1,5,7,8,9,18,2
+
+6th pass
+1,2,5,7,8,9,18
+==================================================
+
+selection sort 
+
+12,7,6,54,9,8,22,13,5
+
+1st pass : 
+5,7,6,54,9,8,22,13,12
+
+2nd pass : 
+5,6,7............
+
+3rd pass
+5,6,7,8,54,9,22,13,12
+
+4th pass :
+5,6,7,8,9,54,22,13,12
+
+5th pass
+5,6,7,8,9,12,22,13,54
+
+6th pass
+5,6,7,8,9,12,13,22,54
+
+=============================================================
+Merge sort  : 
+
+           		6,8,3,1,12,5
+              	6,8,3                 1,12,5
+           6          8,3            1         12,5
+           6        8     3          1       12      5
+-------------------------------------------------------------
+           6,8                3,1              12,5
+
+           6,8                1,3              5,12
+
+                  1,3,6,8                5,12
+
+
+                           1,3, 5,8      6,12
+                              1,3,5,6    8,12
+                                     1,3,5,6,8,12
+
+
+------------------------------------------------------------------
+Quick sort : 
+
+               6,7,12,45,9,19 ---pivot
+
+         <=          19        >=
+     6,7,12,9--pivot            45
+ 
+       9
+<=             >=
+6,7-pivot        12
+
+6  7
+
+output :6,7,9,12,19,45 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
