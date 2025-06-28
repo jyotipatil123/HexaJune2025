@@ -1,0 +1,146 @@
+Nunit discussion 
+
+
+types of classes
+1. partial
+2. static
+3. sealed
+4. abstract 
+
+Data Access Layer (DAL)
+-this is an arhitectural component
+- this handles all the interactions with data source. 
+- this acts like a bridge between your application business logic 
+  and the actual data storage.
+
+seperation of concerns, reusability , maintainability
+
+types : 
+1. .net standard
+2. .net core
+3. .net framework
+
+Calculator : 
+1. add
+2. subtract
+3. multiply
+4. divide
+
+===================================
+check whether the age >18
+   voting or not 
+
+====================================
+check the number is +ve or -ve or zero
+========================================
+
+
+TestFixture: this is a class that contains one or more unit tests.
+attribute : [TestFixture] is added before the class 
+
+[TestFixture]
+public class calculator
+
+[SetUp] : runs before each test 
+
+[TearDown] : runs after each test 
+
+onetimesetup
+onetimeteardown
+
+
+Parameterized test fixtures : 
+
+these will allow us to run the same test class with different constructor arguments. 
+perfect for testing the same logic across multiple configurations. 
+
+
+[setup]
+public void connection()
+{
+   db= new Database();
+   db.connect();
+}
+
+[TearDown]
+public void closeconnection()
+{
+    db.Disconnect();
+}
+
+======================================================================
+
+[TestFixture("USD",1.0)]
+[TestFixture("Eur",0.85)]
+public class currencyconverter
+{
+   ...........
+   .......
+    
+   pubic currencyconverter(string currency, double rate)
+   {
+ ............
+ .............
+=========================================================================
+
+TestFixture inheritance 
+allow to defined common test logic and setup in a base class and reuse it across 
+multiple derived test classes.
+==========================================================================
+TestFixture with generic : 
+allows to define a test class that works with different types making your tests more reusable and scalable
+especially when testing multiple implementations of an interface or similar behavoir across types. 
+
+Sqlconnection con=new SqlConnection
+("server=...;initial catalog=...;integrated security=true; trusted connection=true;
+  username=....;password:.....;..........
+
+employee                 order          company
+empid PK                 orderid        companyid 
+101                       empid FK       empid  FK
+                          101            101 
+
+
+booking               customer        event           venue
+booking_id PK         cust
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,243 @@
+USE [HexawareDB]
+GO
+/****** Object:  Table [dbo].[customer]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[customer](
+	[id] [int] NULL,
+	[firstname] [varchar](50) NULL,
+	[lastname] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[emp]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[emp](
+	[emp_no] [int] NOT NULL,
+	[name] [varchar](50) NULL,
+	[sal] [decimal](10, 2) NULL,
+	[age] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[emp_no] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[employee]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[employee](
+	[emp_id] [int] NULL,
+	[emp_name] [varchar](50) NULL,
+	[manager_id] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[mytable]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[mytable](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [varchar](50) NULL,
+	[city] [varchar](50) NULL,
+ CONSTRAINT [PK_mytable] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[mytable2]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[mytable2](
+	[id1] [int] IDENTITY(1,1) NOT NULL,
+	[name] [varchar](50) NULL,
+	[id] [int] NULL,
+ CONSTRAINT [PK_mytable2] PRIMARY KEY CLUSTERED 
+(
+	[id1] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[mytable3]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[mytable3](
+	[id3] [int] IDENTITY(1,1) NOT NULL,
+	[name1] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Orders]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Orders](
+	[OrderID] [int] NOT NULL,
+	[OrderNumber] [int] NOT NULL,
+	[PersonID] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[OrderID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persons]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons](
+	[ID] [int] NOT NULL,
+	[LastName] [varchar](255) NOT NULL,
+	[FirstName] [varchar](255) NULL,
+	[Age] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persons1]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons1](
+	[ID] [int] NOT NULL,
+	[LastName] [varchar](255) NOT NULL,
+	[FirstName] [varchar](255) NULL,
+	[Age] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persons3]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons3](
+	[ID] [int] NOT NULL,
+	[LastName] [varchar](255) NOT NULL,
+	[FirstName] [varchar](255) NULL,
+	[Age] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persons4]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons4](
+	[ID] [int] NOT NULL,
+	[LastName] [varchar](255) NOT NULL,
+	[FirstName] [varchar](255) NULL,
+	[Age] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC,
+	[LastName] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persons6]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons6](
+	[ID] [int] NOT NULL,
+	[LastName] [varchar](255) NOT NULL,
+	[FirstName] [varchar](255) NULL,
+	[Age] [int] NULL,
+	[City] [varchar](255) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persons8]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons8](
+	[ID] [int] NOT NULL,
+	[LastName] [varchar](255) NOT NULL,
+	[FirstName] [varchar](255) NULL,
+	[Age] [int] NULL,
+UNIQUE NONCLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Products]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Products](
+	[product_id] [int] NOT NULL,
+	[product_name] [varchar](100) NULL,
+	[category] [varchar](50) NULL,
+	[unit_price] [decimal](10, 2) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[product_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Sales]    Script Date: 25-06-2025 15:20:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Sales](
+	[sale_id] [int] NOT NULL,
+	[product_id] [int] NULL,
+	[quantity_sold] [int] NULL,
+	[sale_date] [date] NULL,
+	[total_price] [decimal](10, 2) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[sale_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[student]    Script Date: 25-06-2025 15:20:08 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[student](
+	[rollno] [int] NOT NULL,
+	[name] [varchar](50) NULL,
+	[marks] [numeric](18, 0) NULL,
+ CONSTRAINT [PK_student] PRIMARY KEY CLUSTERED 
+(
+	[rollno] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Persons6] ADD  DEFAULT ('Bangalore') FOR [City]
+GO
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD FOREIGN KEY([PersonID])
+REFERENCES [dbo].[Persons] ([ID])
+GO
+ALTER TABLE [dbo].[Sales]  WITH CHECK ADD FOREIGN KEY([product_id])
+REFERENCES [dbo].[Products] ([product_id])
+GO
+ALTER TABLE [dbo].[Persons1]  WITH CHECK ADD CHECK  (([Age]>=(18)))
+GO

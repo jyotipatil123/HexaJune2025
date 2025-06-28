@@ -1,0 +1,151 @@
+Day 11
+
+Day 4 C# discussion
+
+Exception -- Errors--- issues-- problems 
+OOPS ---java, javascript , c++, c#, vb.net ...........
+
+exception handling --concept 
+try
+catch
+finally 
+-------------------------
+try 
+ {
+   statements ;
+ }
+catch
+ {
+   statements;
+ }
+finally
+ {
+   statements;
+ }
+
+Invalid Bank balance exception : 
+
+types of accounts : 
+1. current (business)         5000
+2. savings                    500
+3. corporate                  0
+================================================
+
+withdraw
+credit 
+================================================
+
+File handling in c#
+
+File : read, write, append, delete, move, copy 
+Directory
+Drive 
+
+system.IO
+built in classes :
+
+Examples : DateTime, Math, Console
+
+built in methods : 
+Examples : Write, WriteLine, Read, ReadLine........
+
+DriveInfo, FileInfo, DirectoryInfo, Directory, File
+
+Read and write : 
+   streamreader
+   streamwriter
+
+
+Func, predicate, action
+
+1. The Func delegates takes 0, or 1 or more input parameters and returns a value.
+
+2. The action takes 0 or 1 or more input parameters but does not return anything.
+ 
+3. Predicate special kind if Func. It contains set of criteria defined inside an if
+   condition and checks whether the passed parameter meets those criteria or not.
+==============================================================================
+C# - Events
+C# - Covariance
+C# - Extension Method
+
+Events are user actions such as key press, clicks, mouse movements, etc., or some occurrence such as system generated notifications. Applications need to respond to events when they occur. For example, interrupts. Events are used for inter-process communication.
+
+Using Delegates with Events
+The events are declared and raised in a class and associated with the event handlers using delegates within the same class or some other class. The class containing the event is used to publish the event. This is called the publisher class. Some other class that accepts this event is called the subscriber class. Events use the publisher-subscriber model.
+
+A publisher is an object that contains the definition of the event and the delegate. The event-delegate association is also defined in this object. A publisher class object invokes the event and it is notified to other objects.
+
+A subscriber is an object that accepts the event and provides an event handler. The delegate in the publisher class invokes the method (event handler) of the subscriber class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+Day 5 c# discussion
+
+
+Interfaces :
+definition : interfaces is a contract class and methods 
+interfaces objects can not be created.
+no constrctors, no fields
+create properties inside interfaces
+interfaces can be inherited  I1 : I2
+inteface objects can be created, but by instatiating with a class
+
+
+Abstract classes : 
+definition : abstract classes contains atleast 1 abstract method and many 
+non abstract methods .
+
+abstract class objects can not be created. 
+can have constructors, fields, properties etc
+abstract classes can be inherited              
+eg: 
+   abstract class A
+   {
+          ..........
+   }
+  abstract class B : A                //possible 
+   {
+          ..........
+   }
+by default , we have to inherit abstract class
+
+Partial class : 
+
+- special feature in c#
+- this will helps us to implement the functionality of a single class into multiple files
+-- and then all these files are combined in to a single class file when the application is getting
+--compiled 
+
+Static class : 
+  static class, static variables, static methods 
+- static keyword
+- we can create objects of static class since it does not allow to create objects 
+- static classed are sealed class 
+
+
+Generics : 
+   Generic class : this will allow the use to define classes and methods with the placeholder. 
+c# 2.0 introduced 
+Generics allows to get the data in the particular data types 
+
+
+Differences : 
+
+indexers 
+  this keyword 
+  they are identified by signatures 
+  they are accessed using indexes 
+  indexers can not be static
+
+properties 
+  get, set -accessors
+  return, setting the value 
+  these are accessed by names 
+  can be static 
+
+Ado: Activex Data object.net
+
+Ado.net 
+
+application ==============> Database             connected architecture=== direct connection
+
+application ======> dataset =======> database    disconnected architecture 
+
+System. Data
+System. Data. SqlClient 
+
+SqlConnection
+SqlDataReader
+SqlDataAdapter
+SqlCommand
+
+Dataset
+  datatable
+     datarow
+     datacolumn 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

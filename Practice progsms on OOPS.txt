@@ -1,0 +1,64 @@
+Practice programs : 
+1. Create a class named employee, stored the relevant 
+   details and display the details using functions.
+
+2. Create a class named customer, accept the customer details and display the customer details. 
+ ============================================
+
+Polymorphism : 
+1. static / design time polymorphism
+         function overloading : same function name with differnet parameters 
+         operator overloading : same operator is doing multiple tasks
+
+2. dynamic / run time polymorphism
+         function overriding  : virtual , override 
+         virtual --parent class, override -- derived class
+
+
+Constructors : 
+types : 
+1. default
+2. paramterized 
+3. copy                HW
+4. private             HW
+5. static              HW
+
+
+Property  :
+get, set
+only get, 
+only set
+auto implemented property 
+=============================================
+
+override  2 ways : 
+1. virtual --override
+2. abstract --override
+=============================================
+Class Relations
+-Association
+-Composition
+
+====================================
+class -entity 
+properties/ member variables -- attributes 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

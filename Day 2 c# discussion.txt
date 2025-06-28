@@ -1,0 +1,48 @@
+Day 2 c#
+
+Exercises :
+1. WAP to check whether the input number
+even or odd.
+2. WAP to check whether the character is vowel or not.
+3. Accept a score and display the grade. 
+
+Nested if :
+if inside if
+
+loops exercises : 
+1. display all even and odd numbers from 1 to 50.
+2. display all numbers from 50 to 1
+3. display all numbers from 1 to 50 which are divisible by 5
+
+do_while loop exercise :
+1. 
+Do you want to delete ? Yes/yes/Y/y
+                        No/no/N/n
+Yes
+exit 
+
+No
+Do you want to delete ? No....
+=============================================================
+Exercises : 
+1. display all the fibonacci series from 1 to 50.
+2. accept a number and check whether it is prime or not.
+3. display the prime numbers from 1 to 100.
+4. accept a string and check whether it is palindrome or not. 
+   Examples : 121, madam, malayalam, rotator, level, racecar,1221,1331,12321.....
+5. accept a number and print factorial. 
+6. accept 3x3 matrix and display matrix addition
+7. accept 3x3 matrix and display matrix multiplication.
+8. within 3x3 matrix display all the numbers sum.
+9. within 3x3 matrix display all the even and odd numbers sum.
+10. within 3x3 matrix display principal diagonal elements sum. 
+
+
+
+
+
+
+
+
+
+

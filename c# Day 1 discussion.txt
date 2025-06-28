@@ -1,0 +1,57 @@
+types : 
+1. .net framework
+2. .net standard
+3. .net core            cross platform 
+
+=====================================
+Assembly : 
+
+this is the deployment unit of .net 
+types : 
+1. private
+2. shared
+3. satellite 
+
+======================================================
+versions : 
+.net 1.0
+     1.1
+     2.0
+     3.0
+     3.5  wpf, wcf....
+     4.0
+     4.7.1
+     4.7.2
+     5         one .net 
+     6
+     7
+     8
+     9
+
+C# 
+  versions
+  1,2,3......................13 
+
+Exercises : 
+1. Accept all the employee details and display them.
+empid, empfirstname.................
+
+
+MSIL   Microsoft intermediate language
+CIL    common intermediate language
+IL     intermediate language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
